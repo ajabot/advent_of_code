@@ -1,7 +1,6 @@
-# puts "Input file path? "
-# input_file_path = gets.chomp
+puts "Input file path? "
+input_file_path = gets.chomp
 
-input_file_path = '03.txt'
 input = File.readlines(input_file_path, chomp: true)
 
 
