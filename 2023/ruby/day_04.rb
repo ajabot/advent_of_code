@@ -18,7 +18,6 @@ puts result
 
 # part 2
 
-
 cards = File
   .readlines(input_file_path, chomp: true)
 	.each_with_index.reduce(Hash.new(0)) do |cards, (card, card_index)|
