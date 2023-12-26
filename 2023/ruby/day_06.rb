@@ -1,7 +1,5 @@
-# puts "Input file path? "
-# input_file_path = gets.chomp
-
-input_file_path = "06.txt"
+puts "Input file path? "
+input_file_path = gets.chomp
 
 # part 1
 
