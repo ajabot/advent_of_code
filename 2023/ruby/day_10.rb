@@ -65,3 +65,19 @@ while visited[pipe].nil?
 end
 
 p visited.count / 2
+
+# part 2
+
+loop = visited.keys
+points = loop + [loop.first]
+
+# shoelace formula
+loop_area = points
+  .each_cons(2)
+  .sum { |p1, p2| p1.first * p2.last - p1.last * p2.first }
+  .abs / 2
+
+# pick's theorem
+result = loop_area - 0.5 * loop.count + 1
+
+p result.to_i
